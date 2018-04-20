@@ -21,7 +21,7 @@ GameObject:
   - component: {fileID: 4380508742601406}
   - component: {fileID: 33288404675513524}
   - component: {fileID: 23547918821035590}
-  - component: {fileID: 114479969883187304}
+  - component: {fileID: 114287351488116928}
   m_Layer: 0
   m_Name: Waypoint
   m_TagString: Untagged
@@ -83,7 +83,7 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1056236968826500}
   m_Mesh: {fileID: 4300000, guid: 19016eb9d8a6f1a4788bb12fe213ee3f, type: 3}
---- !u!114 &114479969883187304
+--- !u!114 &114287351488116928
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -91,7 +91,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1056236968826500}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ea0f86f899366bf409eff73af9f04b72, type: 3}
+  m_Script: {fileID: 11500000, guid: 2826dba2413cf0d4b835abf86f63a767, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   visibleOnGameStart: 0

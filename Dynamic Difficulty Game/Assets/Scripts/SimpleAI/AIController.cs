@@ -40,7 +40,7 @@ public class AIController : MonoBehaviour {
 		Vector3 raycastDir = player.transform.position - transform.position;
 
 		RaycastHit hit;
-		if (Physics.Raycast(transform.position, raycastDir, out hit) && transform.GetChild(1).GetComponent<AIFOVHandler>().playerInside && !chasePlayer)
+		if (Physics.Raycast(transform.position, raycastDir, out hit) && transform.GetChild(1).GetComponent<AIFOVHandler>().playerInside && !chasePlayer && player.GetComponent<PlayerManager>().isVisible)
 		{
 			if (hit.transform.tag == "Player")
 			{
@@ -83,6 +83,13 @@ public class AIController : MonoBehaviour {
 				patrol = true;
 				chasePlayer = false;
 			}
+		}
+	}
+
+	void OnCollisionEnter(Collision other){
+		if (other.gameObject.tag == "Player")
+		{
+			chasePlayer = true;
 		}
 	}
 }

@@ -6,6 +6,10 @@ public class PlayerBullet : MonoBehaviour {
 
 	public int damage = 30;
 
+	void Start(){
+		Physics.IgnoreCollision(GetComponent<Collider>(), GameObject.FindGameObjectWithTag("Player").GetComponent<Collider>());
+	}
+
 	void OnCollisionEnter(Collision other){
 		if (other.gameObject.tag == "AI")
 		{

@@ -5,6 +5,7 @@ using UnityEngine;
 public class PlayerManager : MonoBehaviour {
 
 	public int health = 100;
+	public bool isVisible = false;
 
 	void Update(){
 		if (health <= 0)

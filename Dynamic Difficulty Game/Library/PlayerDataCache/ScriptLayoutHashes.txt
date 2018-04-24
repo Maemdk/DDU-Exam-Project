@@ -129,6 +129,7 @@ e9bdabf9265d758d56f01bb188916fa8 UnityEngine.Networking.dll:UnityEngine.Networki
 528ea1fd7c01796fc60c4e2f172ea229 UnityEngine.Networking.dll:UnityEngine.Networking.NetworkTransformVisualizer
 ce09cb02e2f857c8aa562f2552261f90 Assembly-CSharp.dll:.PlayerBullet
 f26daedc2557c254fbf7dd9e5c9c83e8 Assembly-CSharp.dll:.PlayerController
+6ea4e976f2ce3f9cc9d1357858566478 Assembly-CSharp.dll:.PlayerFootstepController
 05524b8f659e7bfe5756d1335fec24ba UnityEngine.TestRunner.dll:UnityEngine.TestTools.TestRunner.Callbacks.PlayModeRunnerCallback
 5f2ad81aa8994e8fbe25d1e57afe6773 UnityEngine.TestRunner.dll:UnityEngine.TestTools.TestRunner.PlaymodeTestsController
 64eb32cc721b1cc68a91ed57461e188c UnityEngine.TestRunner.dll:UnityEngine.TestTools.TestRunner.Callbacks.RemoteTestResultSender
@@ -139,5 +140,6 @@ c2275a8bfbb9f9942cad75ecdfded41d UnityEngine.HoloLens.dll:UnityEngine.VR.WSA.Spa
 45f3431f0103c41611e8d4eec3d439df UnityEngine.HoloLens.dll:UnityEngine.VR.WSA.SpatialMappingRenderer
 f2aa7429aca3940c2fc952976efa72a3 Assembly-CSharp.dll:.AIController
 ce09cb02e2f857c8aa562f2552261f90 Assembly-CSharp.dll:.AIBullet
-21079caf78648a5bbc3187fd4e819fd2 Assembly-CSharp.dll:.SimplePistol
+545c7ca1c8a71ea339dae9b438a5c0ae Assembly-CSharp.dll:.SimplePistol
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.MeleeWeapon
+05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.GameManager

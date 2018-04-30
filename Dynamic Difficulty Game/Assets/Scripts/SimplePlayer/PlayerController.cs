@@ -5,11 +5,27 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour {
 
 	public float moveSpeed = 1f;
+	[Range(0,1)]
+	public float sneakSpeed = 0.5f; // 1 is 100% of movespeed, 0 is 0% of move speed.
 	public float rotateSpeed = 1f;
+
+	public bool isSneaking;
 
 	void FixedUpdate(){
 		Movement();
 		MouseLook();
+	}
+
+	void Update(){
+		if (Input.GetKeyDown(KeyCode.LeftShift))
+		{
+			isSneaking = true;
+		}
+
+		if (Input.GetKeyUp(KeyCode.LeftShift))
+		{
+			isSneaking = false;
+		}
 	}
 
 	void Movement(){
@@ -17,10 +33,17 @@ public class PlayerController : MonoBehaviour {
 		float yMove = Input.GetAxisRaw("Vertical");
 
 		Vector3 movement = new Vector3(xMove,0,yMove).normalized / 8;
-		transform.Translate(movement * moveSpeed, Space.World);
+		if (isSneaking)
+		{
+			transform.Translate((movement * (moveSpeed * sneakSpeed)) / 2, Space.World);
+		}else
+		{
+			transform.Translate((movement * moveSpeed) / 2, Space.World);
+		}
 	}
 
 	//This one was taken from http://wiki.unity3d.com/index.php?title=LookAtMouse
+
 	//To save time of course. Will make my own once we move to a more advanced player controller
 	void MouseLook(){
 		// Generate a plane that intersects the transform's position with an upwards normal.

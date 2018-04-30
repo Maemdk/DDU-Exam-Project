@@ -5,21 +5,23 @@ using UnityEngine.AI;
 
 public class AIController : MonoBehaviour {
 
-	NavMeshAgent agent;
 	public bool patrol;
 	public bool chasePlayer;
 	public float chaseTime = 3f;
-	float lastSeen;
-	public GameObject patrolWaypointHandler;
-	int currentWaypoint;
-	GameObject player;
-	public GameObject bullet;
 	public int distanceToKeep = 3;
 	public float shootRange = 20f;
 	public float fireRate = 0.1f;
 	private float lastFire;
 	public float bulletSpeed = 10f;
+	public float lookAtSpeed = 1f;
+	public GameObject bullet;
+	public GameObject patrolWaypointHandler;
 
+	int currentWaypoint;
+	GameObject player;
+	NavMeshAgent agent;
+	Vector3 playerLastKnownPos;
+	
 	void Start(){
 		agent = GetComponent<NavMeshAgent>();
 		agent.autoBraking = false;
@@ -59,14 +61,23 @@ public class AIController : MonoBehaviour {
 		if (patrol == true)
 				patrol = false;
 
+		float distance = (player.transform.position - transform.position).magnitude;
+		float lastSeen = Time.time;
+		Quaternion targetRotation = Quaternion.LookRotation(player.transform.position - transform.position);
+		transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, lookAtSpeed * Time.deltaTime);
+
 		agent.destination = player.transform.position;
-		transform.LookAt(player.transform);
 		
 		RaycastHit hit;
 		if (Physics.Raycast(transform.position, transform.forward, out hit, shootRange))
 		{
 			if (hit.transform.tag == "Player")
 			{
+				if (distance <= distanceToKeep)
+				{
+					agent.destination = transform.position;
+				}
+
 				if (Time.time > lastFire)
 				{
 					lastFire = Time.time + fireRate;
@@ -75,10 +86,11 @@ public class AIController : MonoBehaviour {
 					_bullet.GetComponent<Rigidbody>().AddForce(_bullet.transform.forward * bulletSpeed * 10);
 					Physics.IgnoreCollision(_bullet.GetComponent<Collider>(), GetComponent<Collider>());
 					Physics.IgnoreCollision(_bullet.GetComponent<Collider>(), transform.GetChild(0).GetComponent<Collider>());
-
-					lastSeen = Time.time + chaseTime;
 				}
-			} else if (Time.time > lastSeen)
+
+				lastSeen = Time.time + chaseTime;
+			} 
+			else if (Time.time > lastSeen)
 			{
 				patrol = true;
 				chasePlayer = false;

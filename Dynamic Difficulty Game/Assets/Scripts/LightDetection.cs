@@ -7,24 +7,45 @@ public class LightDetection : MonoBehaviour {
 	GameObject player;
 
 	void Start(){
-		//Set the detection range, to the range of the lightsource
-		GetComponent<SphereCollider>().radius = GetComponent<Light>().range;
-
 		player = GameObject.FindGameObjectWithTag("Player");
 	}
 
-	void OnTriggerEnter(Collider other){
-		if (other.tag == "Player")
+	void Update(){
+		//Creates a raycast in the direction of the player from the lightsource. This fixes the issue of being detected in light, through walls
+		Vector3 rayDir;
+		float rayLenght;
+		rayDir = player.transform.position - transform.position;
+		rayLenght = GetComponent<Light>().range;
+		RaycastHit hit;
+		if (Physics.Raycast(transform.position, rayDir, out hit, rayLenght))
 		{
-			player.GetComponent<PlayerManager>().isVisible = true;
-		}
+			if (hit.transform.tag == "Player")
+			{
+				player.GetComponent<PlayerManager>().isVisible = true;
+				Debug.Log("YOU IN DA LIGHT, GET OUT!");
+			}else if (player.GetComponent<PlayerManager>().isVisible)
+			{
+				player.GetComponent<PlayerManager>().isVisible = false;
+			}
+		} 
+
+		//Debug.DrawRay(transform.position, rayDir * rayLenght, Color.red);
 	}
 
-	void OnTriggerExit(Collider other){
-		if (other.tag == "Player")
-		{
-			player.GetComponent<PlayerManager>().isVisible = false;
-		}
-	}
+	//Old system.
+
+	// void OnTriggerEnter(Collider other){
+	// 	if (other.tag == "Player")
+	// 	{
+	// 		player.GetComponent<PlayerManager>().isVisible = true;
+	// 	}
+	// }
+
+	// void OnTriggerExit(Collider other){
+	// 	if (other.tag == "Player")
+	// 	{
+	// 		player.GetComponent<PlayerManager>().isVisible = false;
+	// 	}
+	// }
 
 }

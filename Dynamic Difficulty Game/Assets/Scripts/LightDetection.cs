@@ -23,11 +23,11 @@ public class LightDetection : MonoBehaviour {
 			{
 				player.GetComponent<PlayerManager>().isVisible = true;
 				Debug.Log("YOU IN DA LIGHT, GET OUT!");
-			}else if (player.GetComponent<PlayerManager>().isVisible)
+			}
+		}else if (player.GetComponent<PlayerManager>().isVisible)
 			{
 				player.GetComponent<PlayerManager>().isVisible = false;
 			}
-		} 
 
 		//Debug.DrawRay(transform.position, rayDir * rayLenght, Color.red);
 	}

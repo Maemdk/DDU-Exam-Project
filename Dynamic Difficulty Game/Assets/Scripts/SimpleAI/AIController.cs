@@ -90,6 +90,16 @@ public class AIController : MonoBehaviour {
 					Physics.IgnoreCollision(_bullet.GetComponent<Collider>(), GetComponent<Collider>());
 					Physics.IgnoreCollision(_bullet.GetComponent<Collider>(), transform.GetChild(0).GetComponent<Collider>());
 					audioSource.PlayOneShot(shootSound);
+
+					GameObject[] aiAgents = GameObject.FindGameObjectsWithTag("AI");
+					foreach (GameObject agent in aiAgents)
+					{
+						float _distance = (transform.position - agent.transform.position).magnitude;
+						if (distance < 10)
+						{
+							agent.GetComponent<AIController>().chasePlayer = true;
+						}
+					}
 				}
 
 				lastSeen = Time.time + chaseTime;

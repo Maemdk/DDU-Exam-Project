@@ -11,21 +11,25 @@ public class AIController : MonoBehaviour {
 	public int distanceToKeep = 3;
 	public float shootRange = 20f;
 	public float fireRate = 0.1f;
-	private float lastFire;
 	public float bulletSpeed = 10f;
 	public float lookAtSpeed = 1f;
 	public GameObject bullet;
+	public AudioClip shootSound;
 	public GameObject patrolWaypointHandler;
 
 	int currentWaypoint;
+	float lastFire;
+	float lastSeen;
 	GameObject player;
 	NavMeshAgent agent;
 	Vector3 playerLastKnownPos;
+	AudioSource audioSource;
 	
 	void Start(){
 		agent = GetComponent<NavMeshAgent>();
 		agent.autoBraking = false;
 		player = GameObject.FindGameObjectWithTag("Player");
+		audioSource = GetComponent<AudioSource>();
 	}
 
 	void Update(){
@@ -62,7 +66,6 @@ public class AIController : MonoBehaviour {
 				patrol = false;
 
 		float distance = (player.transform.position - transform.position).magnitude;
-		float lastSeen = Time.time;
 		Quaternion targetRotation = Quaternion.LookRotation(player.transform.position - transform.position);
 		transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, lookAtSpeed * Time.deltaTime);
 
@@ -86,6 +89,7 @@ public class AIController : MonoBehaviour {
 					_bullet.GetComponent<Rigidbody>().AddForce(_bullet.transform.forward * bulletSpeed * 10);
 					Physics.IgnoreCollision(_bullet.GetComponent<Collider>(), GetComponent<Collider>());
 					Physics.IgnoreCollision(_bullet.GetComponent<Collider>(), transform.GetChild(0).GetComponent<Collider>());
+					audioSource.PlayOneShot(shootSound);
 				}
 
 				lastSeen = Time.time + chaseTime;

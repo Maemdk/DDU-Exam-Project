@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour {
 
+	public bool canControl = true;
+
 	public float moveSpeed = 1f;
 	[Range(0,1)]
 	public float sneakSpeed = 0.5f; // 1 is 100% of movespeed, 0 is 0% of move speed.
@@ -12,8 +14,11 @@ public class PlayerController : MonoBehaviour {
 	public bool isSneaking;
 
 	void FixedUpdate(){
-		Movement();
-		MouseLook();
+		if (canControl)
+		{
+			Movement();
+			MouseLook();
+		}
 	}
 
 	void Update(){
@@ -42,7 +47,7 @@ public class PlayerController : MonoBehaviour {
 		}
 	}
 
-	//This one was taken from http://wiki.unity3d.com/index.php?title=LookAtMouse
+	//MouseLook was taken from http://wiki.unity3d.com/index.php?title=LookAtMouse
 
 	//To save time of course. Will make my own once we move to a more advanced player controller
 	void MouseLook(){

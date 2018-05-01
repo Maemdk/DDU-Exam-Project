@@ -25,6 +25,7 @@ public class AIController : MonoBehaviour {
 	NavMeshAgent agent;
 	Vector3 playerLastKnownPos;
 	AudioSource audioSource;
+	bool wasPatrol;
 	
 	void Start(){
 		agent = GetComponent<NavMeshAgent>();

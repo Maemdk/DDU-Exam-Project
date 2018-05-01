@@ -8,6 +8,7 @@ public class AIController : MonoBehaviour {
 	public bool patrol;
 	public bool chasePlayer;
 	public float chaseTime = 3f;
+	public float closeDetectionRange = 1f;
 	public int distanceToKeep = 3;
 	public float shootRange = 20f;
 	public float fireRate = 0.1f;
@@ -46,11 +47,17 @@ public class AIController : MonoBehaviour {
 		Vector3 raycastDir = player.transform.position - transform.position;
 
 		RaycastHit hit;
-		if (Physics.Raycast(transform.position, raycastDir, out hit) && transform.GetChild(1).GetComponent<AIFOVHandler>().playerInside && !chasePlayer && player.GetComponent<PlayerManager>().isVisible)
+		if (Physics.Raycast(transform.position, raycastDir, out hit) && transform.GetChild(1).GetComponent<AIFOVHandler>().playerInside && !chasePlayer)
 		{
 			if (hit.transform.tag == "Player")
 			{
-				chasePlayer = true;
+				if (player.GetComponent<PlayerManager>().isVisible)
+				{
+					chasePlayer = true;
+				} else if ((player.transform.position - transform.position).magnitude < closeDetectionRange)
+				{
+					chasePlayer = true;
+				}
 			}
 		}
 	}

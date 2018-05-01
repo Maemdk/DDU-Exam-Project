@@ -448,11 +448,12 @@ MonoBehaviour:
   patrol: 0
   chasePlayer: 0
   chaseTime: 3
+  closeDetectionRange: 1
   distanceToKeep: 3
   shootRange: 20
   fireRate: 0.24
   bulletSpeed: 80
-  lookAtSpeed: 5.35
+  lookAtSpeed: 4.19
   bullet: {fileID: 1445596867064516, guid: 26ef725299578644d9c943d8cef9cf2d, type: 2}
   shootSound: {fileID: 8300000, guid: 5bd20150cfe12354b8d8d5b57710b88b, type: 3}
   patrolWaypointHandler: {fileID: 0}

@@ -13,6 +13,8 @@ public class PlayerController : MonoBehaviour {
 
 	public bool isSneaking;
 
+	float sneakStartTime;
+
 	void FixedUpdate(){
 		if (canControl)
 		{
@@ -24,11 +26,13 @@ public class PlayerController : MonoBehaviour {
 	void Update(){
 		if (Input.GetKeyDown(KeyCode.LeftShift))
 		{
+			sneakStartTime = Time.time;
 			isSneaking = true;
 		}
 
 		if (Input.GetKeyUp(KeyCode.LeftShift))
 		{
+			GameObject.Find("Game Manager").GetComponent<StatisticsManager>().sneakTime += (Time.time - sneakStartTime);
 			isSneaking = false;
 		}
 	}

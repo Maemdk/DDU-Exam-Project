@@ -6,5 +6,5 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/testLevel.unity
-    guid: 63a70037006be56438bc03b103bdb5bd
+    path: Assets/Scenes/Playtest Levels/Stealth/Level01.unity
+    guid: d20911a7b3727d142b50690a508ba04b

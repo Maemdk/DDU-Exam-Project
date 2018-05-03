@@ -19,9 +19,14 @@ public class LevelHandler : MonoBehaviour {
 	public float targetLightHeight = 10f;
 
 	GameObject player;
+	GameObject camera;
+	bool introCamAnimCheck;
+	Transform camOrigTrans;
 
 	void Start(){
 		player = GameObject.FindGameObjectWithTag("Player");
+		camera = Camera.main.gameObject;
+		camOrigTrans = camera.transform;
 
 		if (playIntro)
 		{
@@ -34,6 +39,18 @@ public class LevelHandler : MonoBehaviour {
 		}
 	}
 
+	void Update(){
+
+		
+		//Gets called once the intro animation on the main camera is done playing
+		if (introCamAnimCheck && !Camera.main.GetComponent<Animation>().isPlaying)
+		{
+			player.GetComponent<PlayerController>().canControl = true;
+			camera.transform.position = camOrigTrans.position;
+			camera.transform.rotation = camOrigTrans.rotation;
+		}
+	}
+
 	void Introduction(){
 		player.GetComponent<PlayerController>().canControl = false;
 
@@ -41,7 +58,8 @@ public class LevelHandler : MonoBehaviour {
 		uiObjectiveText.enabled = true;
 		uiObjectiveText.text = "Mission: " + objectiveText;
 
-		Camera.main.GetComponent<Animation>().Play();
+		camera.GetComponent<Animation>().Play();
+		introCamAnimCheck = true;
 
 		GameObject _targetLight = Instantiate(targetLight, assassinationTarget.transform.position + new Vector3(0,targetLightHeight,0), targetLight.transform.rotation);
 		_targetLight.transform.parent = assassinationTarget.transform;

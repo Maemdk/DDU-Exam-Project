@@ -512,6 +512,7 @@ MeshFilter:
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 --- !u!4 &139198070 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4842853525857576, guid: bb6f757f30407904db4fe8b793de2fb2,
@@ -547,6 +548,8 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+=======
+>>>>>>> parent of 8199d2f... Added fancy camera stuff and started workign on level changes
 =======
 >>>>>>> parent of 8199d2f... Added fancy camera stuff and started workign on level changes
 --- !u!1 &213588076
@@ -688,8 +691,12 @@ Transform:
 =======
   m_Father: {fileID: 1894741001}
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_RootOrder: 5
 >>>>>>> 8199d2f00d468a77001bc52df3215784d141fe5d
+=======
+  m_RootOrder: 6
+>>>>>>> parent of 8199d2f... Added fancy camera stuff and started workign on level changes
 =======
   m_RootOrder: 6
 >>>>>>> parent of 8199d2f... Added fancy camera stuff and started workign on level changes
@@ -899,11 +906,15 @@ Transform:
   m_Father: {fileID: 1894741001}
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: 0, y: 90.00001, z: 0}
 --- !u!23 &412250733
 =======
   m_RootOrder: 4
+=======
+  m_RootOrder: 5
+>>>>>>> parent of 8199d2f... Added fancy camera stuff and started workign on level changes
 =======
   m_RootOrder: 5
 >>>>>>> parent of 8199d2f... Added fancy camera stuff and started workign on level changes
@@ -1200,10 +1211,13 @@ Prefab:
       propertyPath: m_LocalScale.z
       value: 1.0000005
       objectReference: {fileID: 0}
+<<<<<<< HEAD
     - target: {fileID: 1848636598553994, guid: bb6f757f30407904db4fe8b793de2fb2, type: 2}
       propertyPath: m_Name
       value: sneakNme3 (1)
       objectReference: {fileID: 0}
+=======
+>>>>>>> parent of 8199d2f... Added fancy camera stuff and started workign on level changes
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: bb6f757f30407904db4fe8b793de2fb2, type: 2}
   m_IsPrefabParent: 0
@@ -2257,10 +2271,13 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1894741001}
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 90.00001, z: 0}
 --- !u!23 &1091030629
 =======
+=======
+>>>>>>> parent of 8199d2f... Added fancy camera stuff and started workign on level changes
   m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: -90.00001, z: 0}
 --- !u!23 &674401813
@@ -2592,11 +2609,15 @@ Transform:
   m_Father: {fileID: 1894741001}
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 90.00001, z: 0}
 --- !u!23 &1340869625
 =======
   m_RootOrder: 14
+=======
+  m_RootOrder: 15
+>>>>>>> parent of 8199d2f... Added fancy camera stuff and started workign on level changes
 =======
   m_RootOrder: 15
 >>>>>>> parent of 8199d2f... Added fancy camera stuff and started workign on level changes
@@ -2996,6 +3017,8 @@ Transform:
     type: 2}
   m_PrefabInternal: {fileID: 938225660}
 --- !u!1 &978074598
+<<<<<<< HEAD
+=======
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
@@ -3027,6 +3050,97 @@ Transform:
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: -90.00001, z: 0}
 --- !u!23 &978074600
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 978074598}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_Materials:
+  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 1
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!65 &978074601
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 978074598}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!33 &978074602
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 978074598}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1004980575
+>>>>>>> parent of 8199d2f... Added fancy camera stuff and started workign on level changes
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 978074599}
+  - component: {fileID: 978074602}
+  - component: {fileID: 978074601}
+  - component: {fileID: 978074600}
+  m_Layer: 0
+  m_Name: Cube (4)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 4294967295
+  m_IsActive: 1
+--- !u!4 &978074599
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 978074598}
+  m_LocalRotation: {x: -0, y: -0.70710576, z: -0, w: 0.7071079}
+  m_LocalPosition: {x: 8.8, y: 0, z: 4.6}
+  m_LocalScale: {x: 10.082143, y: 5.615, z: 1.0000005}
+  m_Children: []
+  m_Father: {fileID: 1894741001}
+<<<<<<< HEAD
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: -90.00001, z: 0}
+--- !u!23 &978074600
+=======
+  m_RootOrder: 16
+  m_LocalEulerAnglesHint: {x: 0, y: 90.00001, z: 0}
+--- !u!23 &1004980577
+>>>>>>> parent of 8199d2f... Added fancy camera stuff and started workign on level changes
 MeshRenderer:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
@@ -3451,6 +3565,7 @@ MeshFilter:
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 --- !u!1 &1532736268
 =======
 --- !u!1 &1284029530 stripped
@@ -3469,6 +3584,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2c3eb9e8bf8dfcb4a976343b6d783f86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+=======
+>>>>>>> parent of 8199d2f... Added fancy camera stuff and started workign on level changes
 =======
 >>>>>>> parent of 8199d2f... Added fancy camera stuff and started workign on level changes
 --- !u!1 &1329433548
@@ -3608,11 +3725,15 @@ Transform:
   m_Father: {fileID: 1894741001}
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 180.00002, z: 0}
 --- !u!23 &1532736270
 =======
   m_RootOrder: 9
+=======
+  m_RootOrder: 10
+>>>>>>> parent of 8199d2f... Added fancy camera stuff and started workign on level changes
 =======
   m_RootOrder: 10
 >>>>>>> parent of 8199d2f... Added fancy camera stuff and started workign on level changes
@@ -3707,8 +3828,12 @@ Transform:
   - {fileID: 1541484973}
   m_Father: {fileID: 0}
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 8199d2f00d468a77001bc52df3215784d141fe5d
   m_RootOrder: 8
+=======
+  m_RootOrder: 7
+>>>>>>> parent of 8199d2f... Added fancy camera stuff and started workign on level changes
 =======
   m_RootOrder: 7
 >>>>>>> parent of 8199d2f... Added fancy camera stuff and started workign on level changes
@@ -4517,10 +4642,14 @@ Transform:
   m_Father: {fileID: 1894741001}
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_RootOrder: 16
 =======
   m_RootOrder: 12
 >>>>>>> 8199d2f00d468a77001bc52df3215784d141fe5d
+=======
+  m_RootOrder: 13
+>>>>>>> parent of 8199d2f... Added fancy camera stuff and started workign on level changes
 =======
   m_RootOrder: 13
 >>>>>>> parent of 8199d2f... Added fancy camera stuff and started workign on level changes
@@ -4756,11 +4885,15 @@ Transform:
   m_Father: {fileID: 1894741001}
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 180.00002, z: 0}
 --- !u!23 &2059287078
 =======
   m_RootOrder: 11
+=======
+  m_RootOrder: 12
+>>>>>>> parent of 8199d2f... Added fancy camera stuff and started workign on level changes
 =======
   m_RootOrder: 12
 >>>>>>> parent of 8199d2f... Added fancy camera stuff and started workign on level changes
@@ -4821,6 +4954,7 @@ MeshFilter:
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 --- !u!1 &2078572443
 =======
 --- !u!1 &2127861213 stripped
@@ -4828,6 +4962,8 @@ GameObject:
   m_PrefabParentObject: {fileID: 1848636598553994, guid: bb6f757f30407904db4fe8b793de2fb2,
     type: 2}
   m_PrefabInternal: {fileID: 625498128}
+=======
+>>>>>>> parent of 8199d2f... Added fancy camera stuff and started workign on level changes
 =======
 >>>>>>> parent of 8199d2f... Added fancy camera stuff and started workign on level changes
 --- !u!1 &2134748496
@@ -4862,11 +4998,15 @@ Transform:
   m_Father: {fileID: 1894741001}
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 180.00002, z: 0}
 --- !u!23 &2078572445
 =======
   m_RootOrder: 6
+=======
+  m_RootOrder: 7
+>>>>>>> parent of 8199d2f... Added fancy camera stuff and started workign on level changes
 =======
   m_RootOrder: 7
 >>>>>>> parent of 8199d2f... Added fancy camera stuff and started workign on level changes

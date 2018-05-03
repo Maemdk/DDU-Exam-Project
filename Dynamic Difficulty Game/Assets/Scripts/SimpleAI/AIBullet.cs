@@ -25,7 +25,7 @@ public class AIBullet : MonoBehaviour {
 	}
 
 	// void OnCollisionEnter(Collision other){
-	// 	if (other.gameObject.tag == "Player")gi
+	// 	if (other.gameObject.tag == "Player")
 	// 	{
 	// 		other.gameObject.GetComponent<PlayerManager>().health -= damage;
 	// 		Destroy(gameObject);

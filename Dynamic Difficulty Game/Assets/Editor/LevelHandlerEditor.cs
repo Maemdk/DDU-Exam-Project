@@ -6,21 +6,17 @@ using UnityEditor;
 [CustomEditor(typeof(LevelHandler))]
 public class LevelHandlerEditor : Editor {
 	public SerializedProperty 
-		objectiveType_prop,
-		assassinationTarget_prop,
-		targetLight_prop,
-		targetLightHeight_prop;
+		objectiveType,
+		assassinationTarget;
 
 	void OnEnable(){
-		objectiveType_prop = serializedObject.FindProperty("objectiveType");
-		assassinationTarget_prop = serializedObject.FindProperty("assassinationTarget");
-		targetLight_prop = serializedObject.FindProperty("targetLight");
-		targetLightHeight_prop = serializedObject.FindProperty("targetLightHeight");
+		objectiveType = serializedObject.FindProperty("objectiveType");
+		assassinationTarget = serializedObject.FindProperty("assassinationTarget");
 	}
 
 	public override void OnInspectorGUI(){
 		serializedObject.Update();
-
+		
 		DrawDefaultInspector();
 
 		serializedObject.ApplyModifiedProperties();

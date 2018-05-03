@@ -1,7 +1,13 @@
 fileFormatVersion: 2
+<<<<<<< HEAD:Dynamic Difficulty Game/Assets/Pictures.meta
 guid: 9fe31d9d476507f45806ee84b8b21a82
 folderAsset: yes
 timeCreated: 1525350029
+=======
+guid: 880f03fa7efbce54fb8ec3d4e6059961
+folderAsset: yes
+timeCreated: 1525343438
+>>>>>>> 27f7bf4a09d29920a98110dbd229f56cd3fc947b:Dynamic Difficulty Game/Assets/Pictures.meta
 licenseType: Free
 DefaultImporter:
   externalObjects: {}

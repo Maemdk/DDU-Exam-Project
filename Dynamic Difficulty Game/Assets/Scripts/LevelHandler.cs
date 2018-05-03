@@ -4,15 +4,14 @@ using UnityEngine;
 using UnityEngine.UI;
 
 public class LevelHandler : MonoBehaviour {
+	public bool levelComplete;
 	public bool playIntro = true;
-	public GameObject endDoor;
 
 	public enum ObjectiveType{
 		assassinate,
 		item,
 		defend
 	}
-	[Header("Objective")]
 	public ObjectiveType objectiveType;
 	public GameObject assassinationTarget;
 	public string objectiveText;
@@ -23,8 +22,6 @@ public class LevelHandler : MonoBehaviour {
 	GameObject camera;
 	bool introCamAnimCheck;
 	Transform camOrigTrans;
-
-	bool assassination;
 
 	void Start(){
 		player = GameObject.FindGameObjectWithTag("Player");
@@ -40,34 +37,17 @@ public class LevelHandler : MonoBehaviour {
 		{
 			Debug.LogError("The assassination target for the level objective is invalid.");
 		}
-
-		if (endDoor == null)
-		{
-			endDoor = GameObject.Find("EndDoor");
-		}
-
-		switch (objectiveType){
-			case ObjectiveType.assassinate:
-				assassination = true;
-				break;
-		}
 	}
 
 	void Update(){
+
+		
 		//Gets called once the intro animation on the main camera is done playing
 		if (introCamAnimCheck && !Camera.main.GetComponent<Animation>().isPlaying)
 		{
 			player.GetComponent<PlayerController>().canControl = true;
 			camera.transform.position = camOrigTrans.position;
 			camera.transform.rotation = camOrigTrans.rotation;
-		}
-
-		if(assassination){
-			if (assassinationTarget.GetComponent<AIManager>().health <= 0)
-			{
-				Debug.Log("Target wanked!");
-				ActivateExit();
-			}
 		}
 	}
 
@@ -83,10 +63,11 @@ public class LevelHandler : MonoBehaviour {
 
 		GameObject _targetLight = Instantiate(targetLight, assassinationTarget.transform.position + new Vector3(0,targetLightHeight,0), targetLight.transform.rotation);
 		_targetLight.transform.parent = assassinationTarget.transform;
-	}
 
-	void ActivateExit(){
-		endDoor.transform.Find("Light").GetComponent<Light>().color = Color.green;
-		endDoor.transform.Find("Door").gameObject.SetActive(false);
+		switch (objectiveType){
+			case ObjectiveType.assassinate:
+				Debug.Log("You are to kill this mayne");
+				break;
+		}
 	}
 }

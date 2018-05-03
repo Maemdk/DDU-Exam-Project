@@ -5,5 +5,6 @@ using UnityEngine;
 public class StatisticsManager : MonoBehaviour {
 
 	public float sneakTime;
+	public int killCount;
 
 }

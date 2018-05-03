@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Scenes/Playtest Levels/TutorialLevel.unity
+- path: Assets/Scenes/Playtest Levels/IntroLevel.unity
   isLoaded: 1
   isActive: 1

@@ -62,7 +62,7 @@ public class LevelHandler : MonoBehaviour {
 			camera.transform.rotation = camOrigTrans.rotation;
 		}
 
-		if(assassination){
+		if(assassination && assassinationTarget != null){
 			if (assassinationTarget.GetComponent<AIManager>().health <= 0)
 			{
 				Debug.Log("Target wanked!");

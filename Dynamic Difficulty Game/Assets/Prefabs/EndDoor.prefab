@@ -36,6 +36,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4683261298742222}
   - component: {fileID: 65463933604283620}
+  - component: {fileID: 114758954304501786}
   m_Layer: 0
   m_Name: EndDoor
   m_TagString: Untagged
@@ -320,7 +321,7 @@ BoxCollider:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1420830346695994}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 2.48, y: 3.63, z: 2.14}
@@ -347,8 +348,8 @@ Light:
   serializedVersion: 8
   m_Type: 2
   m_Color: {r: 1, g: 0, b: 0, a: 1}
-  m_Intensity: 3.32
-  m_Range: 4.428815
+  m_Intensity: 11.2
+  m_Range: 4.8
   m_SpotAngle: 30
   m_CookieSize: 10
   m_Shadows:
@@ -373,3 +374,14 @@ Light:
   m_UseColorTemperature: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!114 &114758954304501786
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1420830346695994}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c3eb9e8bf8dfcb4a976343b6d783f86, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

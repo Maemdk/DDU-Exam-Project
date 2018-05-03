@@ -12,7 +12,7 @@ public class GameManager : MonoBehaviour {
 		}
 	}
 
-	void LoadNewLevel(){
-
+	public void LoadNewLevel(){
+		
 	}
 }

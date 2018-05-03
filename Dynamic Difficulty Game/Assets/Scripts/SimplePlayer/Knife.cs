@@ -6,8 +6,8 @@ public class Knife : MonoBehaviour {
 
 	public AudioClip sound;
 	public int damage = 1000;
-	bool applyDamage = true;
 
+	bool applyDamage = true;
 	AudioSource audioSource;
 	GameObject target;
 

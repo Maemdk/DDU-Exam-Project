@@ -17,6 +17,8 @@ public class AIController : MonoBehaviour {
 	public GameObject bullet;
 	public AudioClip shootSound;
 	public GameObject patrolWaypointHandler;
+	[HideInInspector]
+	public bool seesPlayer;
 
 	int currentWaypoint;
 	float lastFire;
@@ -25,7 +27,6 @@ public class AIController : MonoBehaviour {
 	NavMeshAgent agent;
 	Vector3 playerLastKnownPos;
 	AudioSource audioSource;
-	bool wasPatrol;
 	
 	void Start(){
 		agent = GetComponent<NavMeshAgent>();
@@ -84,6 +85,8 @@ public class AIController : MonoBehaviour {
 		{
 			if (hit.transform.tag == "Player")
 			{
+				seesPlayer = true;
+
 				if (distance <= distanceToKeep)
 				{
 					agent.destination = transform.position;
@@ -116,6 +119,10 @@ public class AIController : MonoBehaviour {
 			{
 				patrol = true;
 				chasePlayer = false;
+				seesPlayer = false;
+			} else
+			{
+				seesPlayer = false;
 			}
 		}
 	}

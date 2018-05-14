@@ -14,6 +14,10 @@ public class PlayerBullet : MonoBehaviour {
 		if (other.gameObject.tag == "AI")
 		{
 			other.gameObject.GetComponent<AIManager>().health -= damage;
+			if (other.gameObject.GetComponent<AIManager>().health - damage <= 0)
+			{
+				GameObject.Find("Game Manager").GetComponent<StatisticsManager>().ramboKillCount++;
+			}
 			Destroy(gameObject);
 		} else
 		{

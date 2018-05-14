@@ -10,6 +10,7 @@ public class Knife : MonoBehaviour {
 	bool applyDamage = true;
 	AudioSource audioSource;
 	GameObject target;
+	GameObject[] nearbyEnemies;
 
 	void Start(){
 		audioSource = GetComponent<AudioSource>();
@@ -24,9 +25,19 @@ public class Knife : MonoBehaviour {
 
 	void Attack(){
 		audioSource.PlayOneShot(sound);
+
+		if (true)
+		{
+			
+		}
+
 		if (target != null)
 		{
 			target.GetComponent<AIManager>().health -= damage;
+			if (target.GetComponent<AIManager>().health - damage <= 0)
+			{
+				GameObject.Find("Game Manager").GetComponent<StatisticsManager>().stealthKillCount++;
+			}
 		}
 	}
 

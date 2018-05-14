@@ -164,7 +164,7 @@ Light:
   serializedVersion: 8
   m_Type: 2
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 9.11
+  m_Intensity: 2.48
   m_Range: 4.267679
   m_SpotAngle: 30
   m_CookieSize: 10
@@ -490,6 +490,11 @@ Prefab:
       propertyPath: m_RootOrder
       value: 10
       objectReference: {fileID: 0}
+    - target: {fileID: 108221279958874730, guid: 2cae4a38df0d40c41b94e2b4f1438b87,
+        type: 2}
+      propertyPath: m_Intensity
+      value: 2.23
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 2cae4a38df0d40c41b94e2b4f1438b87, type: 2}
   m_IsPrefabParent: 0
@@ -683,7 +688,7 @@ Light:
   serializedVersion: 8
   m_Type: 2
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 9.11
+  m_Intensity: 2.48
   m_Range: 4.267679
   m_SpotAngle: 30
   m_CookieSize: 10
@@ -844,7 +849,7 @@ Light:
   serializedVersion: 8
   m_Type: 2
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 9.11
+  m_Intensity: 2.48
   m_Range: 7.0815887
   m_SpotAngle: 30
   m_CookieSize: 10
@@ -916,7 +921,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &625498128
 Prefab:
@@ -1089,7 +1094,7 @@ Light:
   serializedVersion: 8
   m_Type: 2
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 9.11
+  m_Intensity: 2.48
   m_Range: 4.267679
   m_SpotAngle: 30
   m_CookieSize: 10
@@ -1227,7 +1232,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 42985f8667f1ec744ac93af045c88b5d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  stealthNumber: 0
+  ramboNumber: 0
+  overallNumber: 0
   sneakTime: 0
+  ramboKillCount: 0
+  stealthKillCount: 0
 --- !u!114 &690382722
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1250,7 +1260,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &796294907
 GameObject:
@@ -1824,7 +1834,7 @@ Light:
   serializedVersion: 8
   m_Type: 2
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 9.11
+  m_Intensity: 2.48
   m_Range: 5.263767
   m_SpotAngle: 30
   m_CookieSize: 10

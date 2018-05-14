@@ -19,6 +19,8 @@ public class LevelHandler : MonoBehaviour {
 	public GameObject targetLight;
 	public float targetLightHeight = 10f;
 
+	GameObject gameManager;
+
 	GameObject player;
 	GameObject camera;
 	bool introCamAnimCheck;
@@ -27,6 +29,7 @@ public class LevelHandler : MonoBehaviour {
 	bool assassination;
 
 	void Start(){
+		gameManager = GameObject.Find("Game Manager");
 		player = GameObject.FindGameObjectWithTag("Player");
 		camera = Camera.main.gameObject;
 		camOrigTrans = camera.transform;

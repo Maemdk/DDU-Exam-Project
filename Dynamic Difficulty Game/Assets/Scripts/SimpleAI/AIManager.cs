@@ -14,7 +14,6 @@ public class AIManager : MonoBehaviour {
 	}
 
 	void Death(){
-		GameObject.Find("Game Manager").GetComponent<StatisticsManager>().killCount++;
 		Destroy(gameObject);
 	}
 

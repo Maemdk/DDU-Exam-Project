@@ -36,7 +36,7 @@ public class Knife : MonoBehaviour {
 			target.GetComponent<AIManager>().health -= damage;
 			if (target.GetComponent<AIManager>().health - damage <= 0)
 			{
-				GameObject.Find("Game Manager").GetComponent<StatisticsManager>().stealthKillCount++;
+				GameObject.Find("Game Manager").GetComponent<DynamicDiffManager>().stealthKillCount++;
 			}
 		}
 	}

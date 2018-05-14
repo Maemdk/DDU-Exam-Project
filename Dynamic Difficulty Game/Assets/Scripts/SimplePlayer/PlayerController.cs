@@ -32,7 +32,7 @@ public class PlayerController : MonoBehaviour {
 
 		if (Input.GetKeyUp(KeyCode.LeftShift))
 		{
-			GameObject.Find("Game Manager").GetComponent<StatisticsManager>().sneakTime += (Time.time - sneakStartTime);
+			GameObject.Find("Game Manager").GetComponent<DynamicDiffManager>().sneakTime += (Time.time - sneakStartTime);
 			isSneaking = false;
 		}
 	}

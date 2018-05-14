@@ -17,9 +17,7 @@ public class GameManager : MonoBehaviour {
 	}
 
 	public void LoadNewLevel(){
-		GetComponent<StatisticsManager>().CalculateLevelNumber();
-
-		Scene scene = SceneManager.GetActiveScene();
-		SceneManager.LoadScene(scene.name);
+		SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+		GetComponent<DynamicDiffManager>().EngageDDA();
 	}
 }

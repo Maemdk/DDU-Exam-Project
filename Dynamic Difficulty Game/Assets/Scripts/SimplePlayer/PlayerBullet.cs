@@ -5,6 +5,7 @@ using UnityEngine;
 public class PlayerBullet : MonoBehaviour {
 
 	public int damage = 30;
+	bool hasKilled;
 
 	void Start(){
 		Physics.IgnoreCollision(GetComponent<Collider>(), GameObject.FindGameObjectWithTag("Player").GetComponent<Collider>());
@@ -14,9 +15,10 @@ public class PlayerBullet : MonoBehaviour {
 		if (other.gameObject.tag == "AI")
 		{
 			other.gameObject.GetComponent<AIManager>().health -= damage;
-			if (other.gameObject.GetComponent<AIManager>().health - damage <= 0)
+			if (other.gameObject.GetComponent<AIManager>().health - damage <= 0 && !hasKilled)
 			{
-				GameObject.Find("Game Manager").GetComponent<StatisticsManager>().ramboKillCount++;
+				hasKilled = true;
+				GameObject.Find("Game Manager").GetComponent<DynamicDiffManager>().ramboKillCount++;
 			}
 			Destroy(gameObject);
 		} else

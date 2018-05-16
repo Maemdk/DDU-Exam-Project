@@ -7,7 +7,7 @@ public class PlayerController : MonoBehaviour {
 	public bool canControl = true;
 
 	public float moveSpeed = 1f;
-	[Range(0,1)]
+
 	public float sneakSpeed = 0.5f; // 1 is 100% of movespeed, 0 is 0% of move speed.
 	public float rotateSpeed = 1f;
 

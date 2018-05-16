@@ -16,6 +16,7 @@ public class DynamicDiffManager : MonoBehaviour {
 	public int stealthKillCount;
 
 	GameObject player;
+	GameObject enemyHolder;
 
 	void Start(){
 		player = GameObject.FindGameObjectWithTag("Player");
@@ -23,7 +24,7 @@ public class DynamicDiffManager : MonoBehaviour {
 
 	public void EngageDDA(){
 		CalculateChangeValues();
-		MakeChanges();
+		StartCoroutine(MakeChanges());
 	}
 
 	// Finds whether to assisn a point to stealth or rambo - Use it after a stage is cleared
@@ -42,14 +43,23 @@ public class DynamicDiffManager : MonoBehaviour {
 		overallNumber += (stealthNumber + ramboNumber);
 	}
 
-	void MakeChanges(){
-		// STEALTH THINGS HERE
-		player.GetComponent<PlayerController>().moveSpeed = 0.1f;
-		GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerController>().moveSpeed = 0.1f;
+	IEnumerator MakeChanges(){
+		// This is to make sure objects are loaded from the new scene so we wait for the scene to load. PROLLY NEED TO FIND BETTER SOLUTION... WHAT IF IT LOADS SLOW?=!!!?!? SceneManager.OnLevelLoaded or something
+		yield return new WaitForSeconds(1f);
+		player = GameObject.FindGameObjectWithTag("Player");
+		enemyHolder = GameObject.Find("Variable Enemies");
 
+		// STEALTH THINGS HERE
 		// -------------------------------------------------------------
 		// RAMBO THINGS HERE
-
+		for (int i = enemyHolder.transform.childCount; i > 1; i++)
+		{
+			if (i == ramboNumber)
+			{
+				break;
+			}
+			enemyHolder.transform.GetChild(i).gameObject.SetActive(false);
+		}
 
 	}
 

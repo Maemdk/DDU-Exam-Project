@@ -112,7 +112,7 @@ NavMeshSettings:
     accuratePlacement: 0
     debug:
       m_Flags: 0
-  m_NavMeshData: {fileID: 23800000, guid: 53bd4a646f781b24491b8346f7497968, type: 2}
+  m_NavMeshData: {fileID: 23800000, guid: 95a827d10356b40419c857e2194d082e, type: 2}
 --- !u!1 &6488309
 GameObject:
   m_ObjectHideFlags: 0
@@ -197,30 +197,13 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 6488309}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
-<<<<<<< HEAD:Dynamic Difficulty Game/Assets/Scenes/Final Levels/TutorialLevel.unity
---- !u!1 &14323312
-=======
 --- !u!1 &85928089
->>>>>>> origin/master:Dynamic Difficulty Game/Assets/Scenes/Playtest Levels/TutorialLevel.unity
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   serializedVersion: 5
   m_Component:
-<<<<<<< HEAD:Dynamic Difficulty Game/Assets/Scenes/Final Levels/TutorialLevel.unity
-  - component: {fileID: 14323313}
-  - component: {fileID: 14323315}
-  - component: {fileID: 14323314}
-  m_Layer: 0
-  m_Name: Point light (1)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
-  m_IsActive: 1
---- !u!4 &14323313
-=======
   - component: {fileID: 85928090}
   - component: {fileID: 85928092}
   - component: {fileID: 85928091}
@@ -232,22 +215,10 @@ GameObject:
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &85928090
->>>>>>> origin/master:Dynamic Difficulty Game/Assets/Scenes/Playtest Levels/TutorialLevel.unity
 Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-<<<<<<< HEAD:Dynamic Difficulty Game/Assets/Scenes/Final Levels/TutorialLevel.unity
-  m_GameObject: {fileID: 14323312}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 12.38, y: 3.02, z: -64.46}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1541484973}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &14323314
-=======
   m_GameObject: {fileID: 85928089}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 26.17, y: 2.77, z: -65.26}
@@ -257,54 +228,32 @@ Transform:
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &85928091
->>>>>>> origin/master:Dynamic Difficulty Game/Assets/Scenes/Playtest Levels/TutorialLevel.unity
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-<<<<<<< HEAD:Dynamic Difficulty Game/Assets/Scenes/Final Levels/TutorialLevel.unity
-  m_GameObject: {fileID: 14323312}
-=======
   m_GameObject: {fileID: 85928089}
->>>>>>> origin/master:Dynamic Difficulty Game/Assets/Scenes/Playtest Levels/TutorialLevel.unity
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0e5243f4b468a46459aafd9e69831bc8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-<<<<<<< HEAD:Dynamic Difficulty Game/Assets/Scenes/Final Levels/TutorialLevel.unity
---- !u!108 &14323315
-=======
 --- !u!108 &85928092
->>>>>>> origin/master:Dynamic Difficulty Game/Assets/Scenes/Playtest Levels/TutorialLevel.unity
 Light:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-<<<<<<< HEAD:Dynamic Difficulty Game/Assets/Scenes/Final Levels/TutorialLevel.unity
-  m_GameObject: {fileID: 14323312}
-=======
   m_GameObject: {fileID: 85928089}
->>>>>>> origin/master:Dynamic Difficulty Game/Assets/Scenes/Playtest Levels/TutorialLevel.unity
   m_Enabled: 1
   serializedVersion: 8
   m_Type: 2
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-<<<<<<< HEAD:Dynamic Difficulty Game/Assets/Scenes/Final Levels/TutorialLevel.unity
-  m_Intensity: 9.11
-  m_Range: 5.263767
-  m_SpotAngle: 30
-  m_CookieSize: 10
-  m_Shadows:
-    m_Type: 1
-=======
   m_Intensity: 2.01
   m_Range: 5.77417
   m_SpotAngle: 30
   m_CookieSize: 10
   m_Shadows:
     m_Type: 2
->>>>>>> origin/master:Dynamic Difficulty Game/Assets/Scenes/Playtest Levels/TutorialLevel.unity
     m_Resolution: -1
     m_CustomResolution: -1
     m_Strength: 1
@@ -320,11 +269,7 @@ Light:
     m_Bits: 4294967295
   m_Lightmapping: 4
   m_AreaSize: {x: 1, y: 1}
-<<<<<<< HEAD:Dynamic Difficulty Game/Assets/Scenes/Final Levels/TutorialLevel.unity
-  m_BounceIntensity: 0.7
-=======
   m_BounceIntensity: 1
->>>>>>> origin/master:Dynamic Difficulty Game/Assets/Scenes/Playtest Levels/TutorialLevel.unity
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
   m_ShadowRadius: 0
@@ -549,100 +494,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 129217335}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!1 &130719485
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 130719486}
-  - component: {fileID: 130719487}
-  m_Layer: 0
-  m_Name: Spotlight
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &130719486
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 130719485}
-  m_LocalRotation: {x: 0.7071057, y: -0, z: -0, w: 0.707108}
-  m_LocalPosition: {x: 0, y: 7.58, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1991640816}
-  m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 90.00001, y: 0, z: 0}
---- !u!108 &130719487
-Light:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 130719485}
-  m_Enabled: 1
-  serializedVersion: 8
-  m_Type: 0
-  m_Color: {r: 0.63235295, g: 0.7718053, b: 1, a: 1}
-  m_Intensity: 1
-  m_Range: 9.8041
-  m_SpotAngle: 95.30727
-  m_CookieSize: 10
-  m_Shadows:
-    m_Type: 1
-    m_Resolution: -1
-    m_CustomResolution: -1
-    m_Strength: 1
-    m_Bias: 0.05
-    m_NormalBias: 0.4
-    m_NearPlane: 0.2
-  m_Cookie: {fileID: 0}
-  m_DrawHalo: 0
-  m_Flare: {fileID: 0}
-  m_RenderMode: 0
-  m_CullingMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_Lightmapping: 4
-  m_AreaSize: {x: 1, y: 1}
-  m_BounceIntensity: 1
-  m_ColorTemperature: 6570
-  m_UseColorTemperature: 0
-  m_ShadowRadius: 0
-  m_ShadowAngle: 0
 --- !u!4 &139198070 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4842853525857576, guid: bb6f757f30407904db4fe8b793de2fb2,
     type: 2}
   m_PrefabInternal: {fileID: 671625009}
-<<<<<<< HEAD:Dynamic Difficulty Game/Assets/Scenes/Final Levels/TutorialLevel.unity
---- !u!1 &213792475
-=======
 --- !u!1 &197226838
->>>>>>> origin/master:Dynamic Difficulty Game/Assets/Scenes/Playtest Levels/TutorialLevel.unity
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   serializedVersion: 5
   m_Component:
-<<<<<<< HEAD:Dynamic Difficulty Game/Assets/Scenes/Final Levels/TutorialLevel.unity
-  - component: {fileID: 213792476}
-  - component: {fileID: 213792478}
-  - component: {fileID: 213792477}
-  m_Layer: 0
-  m_Name: Point light (2)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
-  m_IsActive: 1
---- !u!4 &213792476
-=======
   - component: {fileID: 197226839}
   - component: {fileID: 197226841}
   - component: {fileID: 197226840}
@@ -654,22 +517,10 @@ GameObject:
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &197226839
->>>>>>> origin/master:Dynamic Difficulty Game/Assets/Scenes/Playtest Levels/TutorialLevel.unity
 Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-<<<<<<< HEAD:Dynamic Difficulty Game/Assets/Scenes/Final Levels/TutorialLevel.unity
-  m_GameObject: {fileID: 213792475}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 25.81, y: 3.02, z: -64.46}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1541484973}
-  m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &213792477
-=======
   m_GameObject: {fileID: 197226838}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -43.07, y: 2.57, z: -52.44}
@@ -679,54 +530,32 @@ Transform:
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &197226840
->>>>>>> origin/master:Dynamic Difficulty Game/Assets/Scenes/Playtest Levels/TutorialLevel.unity
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-<<<<<<< HEAD:Dynamic Difficulty Game/Assets/Scenes/Final Levels/TutorialLevel.unity
-  m_GameObject: {fileID: 213792475}
-=======
   m_GameObject: {fileID: 197226838}
->>>>>>> origin/master:Dynamic Difficulty Game/Assets/Scenes/Playtest Levels/TutorialLevel.unity
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0e5243f4b468a46459aafd9e69831bc8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-<<<<<<< HEAD:Dynamic Difficulty Game/Assets/Scenes/Final Levels/TutorialLevel.unity
---- !u!108 &213792478
-=======
 --- !u!108 &197226841
->>>>>>> origin/master:Dynamic Difficulty Game/Assets/Scenes/Playtest Levels/TutorialLevel.unity
 Light:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-<<<<<<< HEAD:Dynamic Difficulty Game/Assets/Scenes/Final Levels/TutorialLevel.unity
-  m_GameObject: {fileID: 213792475}
-=======
   m_GameObject: {fileID: 197226838}
->>>>>>> origin/master:Dynamic Difficulty Game/Assets/Scenes/Playtest Levels/TutorialLevel.unity
   m_Enabled: 1
   serializedVersion: 8
   m_Type: 2
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-<<<<<<< HEAD:Dynamic Difficulty Game/Assets/Scenes/Final Levels/TutorialLevel.unity
-  m_Intensity: 9.11
-  m_Range: 5.263767
-  m_SpotAngle: 30
-  m_CookieSize: 10
-  m_Shadows:
-    m_Type: 1
-=======
   m_Intensity: 2.01
   m_Range: 4.159996
   m_SpotAngle: 30
   m_CookieSize: 10
   m_Shadows:
     m_Type: 2
->>>>>>> origin/master:Dynamic Difficulty Game/Assets/Scenes/Playtest Levels/TutorialLevel.unity
     m_Resolution: -1
     m_CustomResolution: -1
     m_Strength: 1
@@ -742,11 +571,7 @@ Light:
     m_Bits: 4294967295
   m_Lightmapping: 4
   m_AreaSize: {x: 1, y: 1}
-<<<<<<< HEAD:Dynamic Difficulty Game/Assets/Scenes/Final Levels/TutorialLevel.unity
-  m_BounceIntensity: 0.7
-=======
   m_BounceIntensity: 1
->>>>>>> origin/master:Dynamic Difficulty Game/Assets/Scenes/Playtest Levels/TutorialLevel.unity
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
   m_ShadowRadius: 0
@@ -1659,23 +1484,6 @@ Prefab:
       propertyPath: m_RootOrder
       value: 6
       objectReference: {fileID: 0}
-    - target: {fileID: 4414860756493254, guid: 82389c062b1be6e488632462fd69669e, type: 2}
-      propertyPath: m_RootOrder
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4938683792947990, guid: 82389c062b1be6e488632462fd69669e, type: 2}
-      propertyPath: m_RootOrder
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 114834859976823706, guid: 82389c062b1be6e488632462fd69669e,
-        type: 2}
-      propertyPath: moveSpeed
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 4455356419031780, guid: 82389c062b1be6e488632462fd69669e, type: 2}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 90
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 82389c062b1be6e488632462fd69669e, type: 2}
   m_IsPrefabParent: 0
@@ -1810,83 +1618,6 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: bb6f757f30407904db4fe8b793de2fb2, type: 2}
   m_IsPrefabParent: 0
---- !u!1 &680215377
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 680215378}
-  - component: {fileID: 680215380}
-  - component: {fileID: 680215379}
-  m_Layer: 0
-  m_Name: Point light
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
-  m_IsActive: 1
---- !u!4 &680215378
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 680215377}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.72, y: 3.02, z: -64.46}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1541484973}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &680215379
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 680215377}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0e5243f4b468a46459aafd9e69831bc8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!108 &680215380
-Light:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 680215377}
-  m_Enabled: 1
-  serializedVersion: 8
-  m_Type: 2
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 9.11
-  m_Range: 5.263767
-  m_SpotAngle: 30
-  m_CookieSize: 10
-  m_Shadows:
-    m_Type: 1
-    m_Resolution: -1
-    m_CustomResolution: -1
-    m_Strength: 1
-    m_Bias: 0.05
-    m_NormalBias: 0.4
-    m_NearPlane: 0.2
-  m_Cookie: {fileID: 0}
-  m_DrawHalo: 0
-  m_Flare: {fileID: 0}
-  m_RenderMode: 0
-  m_CullingMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_Lightmapping: 4
-  m_AreaSize: {x: 1, y: 1}
-  m_BounceIntensity: 0.7
-  m_ColorTemperature: 6570
-  m_UseColorTemperature: 0
-  m_ShadowRadius: 0
-  m_ShadowAngle: 0
 --- !u!1 &690382720
 GameObject:
   m_ObjectHideFlags: 0
@@ -1919,12 +1650,8 @@ MonoBehaviour:
   ramboNumber: 0
   overallNumber: 0
   sneakTime: 0
-<<<<<<< HEAD:Dynamic Difficulty Game/Assets/Scenes/Final Levels/TutorialLevel.unity
-  killCount: 0
-=======
   ramboKillCount: 0
   stealthKillCount: 0
->>>>>>> origin/master:Dynamic Difficulty Game/Assets/Scenes/Playtest Levels/TutorialLevel.unity
 --- !u!114 &690382722
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3932,11 +3659,6 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-<<<<<<< HEAD:Dynamic Difficulty Game/Assets/Scenes/Final Levels/TutorialLevel.unity
-  - {fileID: 680215378}
-  - {fileID: 14323313}
-  - {fileID: 213792476}
-=======
   - {fileID: 458515922}
   - {fileID: 1465003508}
   - {fileID: 85928090}
@@ -3948,7 +3670,6 @@ Transform:
   - {fileID: 197226839}
   - {fileID: 1981355012}
   - {fileID: 1825884061}
->>>>>>> origin/master:Dynamic Difficulty Game/Assets/Scenes/Playtest Levels/TutorialLevel.unity
   m_Father: {fileID: 1402331757}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

@@ -58,14 +58,10 @@ public class DynamicDiffManager : MonoBehaviour {
 		}
 		// -------------------------------------------------------------
 		// RAMBO THINGS HERE
-<<<<<<< HEAD
 
 		// -------------------------------------------------------------
 		// BOTH
 		for (int i = enemyHolder.transform.childCount - 1; i >= 0; i--)
-=======
-		for (int i = enemyHolder.transform.childCount; i > 1; i++)
->>>>>>> 542516bbc2f091f8b7d129045dd810788cc9d5eb
 		{
 			if (i == overallNumber)
 			{

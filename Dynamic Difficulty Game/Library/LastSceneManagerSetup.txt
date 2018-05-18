@@ -1,12 +1,4 @@
 sceneSetups:
-<<<<<<< HEAD
-- path: Assets/Scenes/Playtest Levels/Intro Levels/IntroLevel 2.unity
-=======
-<<<<<<< HEAD
-- path: Assets/Scenes/Final Levels/1ramboLevel.unity
-=======
 - path: Assets/Scenes/Playtest Levels/IntroLevel 1.unity
->>>>>>> origin/master
->>>>>>> 542516bbc2f091f8b7d129045dd810788cc9d5eb
   isLoaded: 1
   isActive: 1

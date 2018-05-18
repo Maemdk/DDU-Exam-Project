@@ -52,7 +52,7 @@ public class DynamicDiffManager : MonoBehaviour {
 		// STEALTH THINGS HERE
 		// -------------------------------------------------------------
 		// RAMBO THINGS HERE
-		for (int i = enemyHolder.transform.childCount - 1; i >= 0; i--)
+		for (int i = enemyHolder.transform.childCount; i > 1; i++)
 		{
 			if (i == ramboNumber)
 			{

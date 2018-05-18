@@ -120,16 +120,16 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1848636598553994}
-  m_LocalRotation: {x: -0, y: -0.71769553, z: -0, w: 0.6963571}
-  m_LocalPosition: {x: -9.97, y: -9.970084, z: -6.37}
-  m_LocalScale: {x: 1.0000002, y: 1, z: 1.0000002}
+  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
+  m_LocalPosition: {x: 28.012482, y: -12.34, z: -49.4}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4075231235849748}
   - {fileID: 4956791827732646}
   - {fileID: 4360112452122454}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: -91.729004, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
 --- !u!4 &4956791827732646
 Transform:
   m_ObjectHideFlags: 1
@@ -396,7 +396,7 @@ Light:
   m_Enabled: 1
   serializedVersion: 8
   m_Type: 0
-  m_Color: {r: 0.48235288, g: 1, b: 0.35294116, a: 1}
+  m_Color: {r: 1, g: 0.35294116, b: 0.35294116, a: 1}
   m_Intensity: 0.72
   m_Range: 13.739819
   m_SpotAngle: 95
@@ -450,7 +450,6 @@ MonoBehaviour:
   chaseTime: 3
   closeDetectionRange: 1
   distanceToKeep: 3
-  moveSpeed: 3
   shootRange: 20
   fireRate: 0.24
   bulletSpeed: 80

@@ -988,7 +988,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playIntro: 0
   endDoor: {fileID: 1284029530}
-  objectiveType: 1
+  objectiveType: 0
   assassinationTarget: {fileID: 2127861213}
   objectiveText: Kill the hightlighted target
   targetLight: {fileID: 1465556454628384, guid: 02c4a1833d3367e468499c71f70215f2,

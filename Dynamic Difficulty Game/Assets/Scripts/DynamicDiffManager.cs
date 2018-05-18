@@ -17,6 +17,7 @@ public class DynamicDiffManager : MonoBehaviour {
 
 	GameObject player;
 	GameObject enemyHolder;
+	GameObject lightHolder;
 
 	void Start(){
 		player = GameObject.FindGameObjectWithTag("Player");
@@ -36,10 +37,6 @@ public class DynamicDiffManager : MonoBehaviour {
 			stealthNumber++;
 		}
 
-		if (sneakTime > 25){
-			stealthNumber++;
-		}
-
 		overallNumber += (stealthNumber + ramboNumber);
 	}
 
@@ -48,13 +45,25 @@ public class DynamicDiffManager : MonoBehaviour {
 		yield return new WaitForSeconds(1f);
 		player = GameObject.FindGameObjectWithTag("Player");
 		enemyHolder = GameObject.Find("Variable Enemies");
+		lightHolder = GameObject.Find("Variable Lights");
 
 		// STEALTH THINGS HERE
+		for (int i = lightHolder.transform.childCount - 1; i >= 0; i--)
+		{
+			if (i == stealthNumber)
+			{
+				break;
+			}
+			lightHolder.transform.GetChild(i).gameObject.SetActive(false);
+		}
 		// -------------------------------------------------------------
 		// RAMBO THINGS HERE
+
+		// -------------------------------------------------------------
+		// BOTH
 		for (int i = enemyHolder.transform.childCount - 1; i >= 0; i--)
 		{
-			if (i == ramboNumber)
+			if (i == overallNumber)
 			{
 				break;
 			}

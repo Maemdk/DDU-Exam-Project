@@ -10,6 +10,7 @@ public class AIController : MonoBehaviour {
 	public float chaseTime = 3f;
 	public float closeDetectionRange = 1f;
 	public int distanceToKeep = 3;
+	public float moveSpeed = 5f;
 	public float shootRange = 20f;
 	public float fireRate = 0.1f;
 	public float bulletSpeed = 10f;
@@ -33,6 +34,7 @@ public class AIController : MonoBehaviour {
 		agent.autoBraking = false;
 		player = GameObject.FindGameObjectWithTag("Player");
 		audioSource = GetComponent<AudioSource>();
+		agent.speed = moveSpeed;
 	}
 
 	void Update(){

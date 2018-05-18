@@ -20,7 +20,7 @@ MonoBehaviour:
   m_ShowMode: 4
   m_Title: 
   m_RootView: {fileID: 2}
-  m_MinSize: {x: 950, y: 542}
+  m_MinSize: {x: 950, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
 --- !u!114 &2
 MonoBehaviour:
@@ -109,7 +109,7 @@ MonoBehaviour:
   m_MinSize: {x: 887, y: 492}
   m_MaxSize: {x: 18008, y: 14042}
   vertical: 0
-  controlID: 158
+  controlID: 134
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -258,7 +258,7 @@ MonoBehaviour:
   m_MinSize: {x: 336, y: 271}
   m_MaxSize: {x: 14006, y: 10021}
   vertical: 0
-  controlID: 125
+  controlID: 51
 --- !u!114 &12
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -304,8 +304,8 @@ MonoBehaviour:
     y: 0
     width: 532
     height: 396
-  m_MinSize: {x: 100, y: 100}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 104, y: 121}
+  m_MaxSize: {x: 4004, y: 4021}
   m_ActualView: {fileID: 22}
   m_Panes:
   - {fileID: 22}
@@ -445,9 +445,9 @@ MonoBehaviour:
   m_PersistentViewDataDictionary: {fileID: 0}
   m_TreeViewState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: d6280000
+    m_SelectedIDs: 7ab60000
     m_LastClickedID: 0
-    m_ExpandedIDs: 2a82fcffdcd5fcff4ae8fcff3015fdffe457fdff388cfdff62d0fdffee09feff9068feffa29afeff98fbfffff4ffffff000000006e2a0000842a0000922a00003a6c0000
+    m_ExpandedIDs: d0fef7ff9040f8ff1267f8ffc69ef8ffa6b9f8ffc4def8ff9444f9ffc64af9ff0655f9ff1c73f9ff8c94f9fff0a9fbffbe0ffeff7414feff1820feffb835feff0654feffba64feff6e9dfeffe4a9feff1cb5feff9ae2feffaae7fefffaf8feffd816ffffec35ffff14d5fffffee1ffff98fbffff00000000643e0000644b000094510000a25c000022600000a26300000265000082650000906500009c6d0000e06d0000d0bd0000ced8000052dc000084dd0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -498,14 +498,14 @@ MonoBehaviour:
     height: 650
   m_PersistentViewDataDictionary: {fileID: 0}
   m_SceneLighting: 1
-  lastFramingTime: 12689.262332416443
+  lastFramingTime: 2810.431088129288
   m_2DMode: 0
   m_isRotationLocked: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 3.762329, y: 16.963272, z: -6.676261}
+    m_Target: {x: 22.404902, y: 15.808435, z: -6.131487}
     speed: 2
-    m_Value: {x: 3.762329, y: 16.963272, z: -6.676261}
+    m_Value: {x: 22.404902, y: 15.808435, z: -6.131487}
   m_RenderMode: 0
   m_ValidateTrueMetals: 0
   m_SceneViewState:
@@ -529,13 +529,13 @@ MonoBehaviour:
       speed: 2
       m_Value: 0
   m_Rotation:
-    m_Target: {x: -0.41226175, y: -0.3108813, z: 0.15207821, w: -0.84277236}
+    m_Target: {x: 0.16559362, y: -0.3412234, z: 0.06119742, w: 0.92325526}
     speed: 2
-    m_Value: {x: -0.41226175, y: -0.3108813, z: 0.15207821, w: -0.84277236}
+    m_Value: {x: 0.16559362, y: -0.3412234, z: 0.06119742, w: 0.92325526}
   m_Size:
-    m_Target: 18.239628
+    m_Target: 3.7820885
     speed: 2
-    m_Value: 18.239628
+    m_Value: 3.7820885
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -622,24 +622,24 @@ MonoBehaviour:
   m_LastProjectPath: H:\DDU EXAM\Dynamic Difficulty Game
   m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: aa280000
-    m_LastClickedID: 10410
-    m_ExpandedIDs: 0000000034280000aa280000462900004829000000ca9a3bffffff7f
+    scrollPos: {x: 0, y: 78}
+    m_SelectedIDs: ac280000
+    m_LastClickedID: 10412
+    m_ExpandedIDs: 0000000036280000ac280000dc2800004e29000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: 
-      m_OriginalName: 
+      m_Name: IntroLevel
+      m_OriginalName: IntroLevel
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
-      m_UserData: 0
+      m_UserData: 10340
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
-      m_OriginalEventType: 11
+      m_OriginalEventType: 0
       m_IsRenamingFilename: 1
       m_ClientGUIView: {fileID: 12}
     m_SearchString: 
@@ -653,7 +653,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000342800004629000048290000
+    m_ExpandedIDs: 0000000036280000ac2800004c2900004e290000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
